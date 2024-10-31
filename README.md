@@ -12,34 +12,52 @@ Game is designed like this:
 App has login, register, room, active users and game screens. We used Navigation library to navigate between screens and passing arguments between screens. All data like user information, room information is saved to Firebase RealTimeDatabase. When you open the app, you will see login screen, if you have a account you can login. If you don't you should register and go back to login screen. After that, you will see all rooms with different numbered letters and with or without a letter constant. You can choose any room by clicking on it. Then app will take you to active users screen. You can see all logged in users. If you click on your username's button, you will go to guessed word screen. You can type the word and start playing by going to the game screen.
 
 There are some images from the app:
+
 * Login screen
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/login.jpg" width="75%" />
+
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/login.jpg" width="33%" />
   <br>
+  
 * Register screen
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/register.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/register.jpg" width="33%" />
   <br>
+  
 * Room screen
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/rooms.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/rooms.jpg" width="33%" />
   <br>
+  
 * Active users screen
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/active_users.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/active_users.jpg" width="33%" />
   <br>
+  
 * Guess screen
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/guess_screen.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/guess_screen.jpg" width="33%" />
   <br>
+
 * Game screen with a letter constant
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/letter_constant.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/letter_constant.jpg" width="33%" />
   <br>
+  
 * Gameplay screenshot
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/game_screen.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/game_screen.jpg" width="33%" />
   <br>
 
 There are screenshots from database to show data structure:
+
 * User data
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/user_db.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/user_db.png" width="33%" />
   <br>
+  
 * Room data
-<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/room_db.jpg" width="75%" />
+  
+<img src="https://github.com/cigdeemtok/WordleClone/blob/main/images/room_db.png" width="33%" />
   <br>
 
 You can clone this repository and try it yourself. You should make sure you have all required libraries imported and make all connections for Firebase.
