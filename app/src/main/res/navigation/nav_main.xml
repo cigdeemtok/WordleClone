@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/girisYapFragment">
+    <fragment
+        android:id="@+id/girisYapFragment"
+        android:name="com.example.wordleclone.views.GirisYapFragment"
+        android:label="fragment_giris_yap"
+        tools:layout="@layout/fragment_giris_yap" >
+        <action
+            android:id="@+id/action_girisYapFragment_to_kayitOlFragment"
+            app:destination="@id/kayitOlFragment" />
+        <action
+            android:id="@+id/action_girisYapFragment_to_roomFragment"
+            app:destination="@id/roomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitOlFragment"
+        android:name="com.example.wordleclone.views.KayitOlFragment"
+        android:label="fragment_kayit_ol"
+        tools:layout="@layout/fragment_kayit_ol" >
+        <action
+            android:id="@+id/action_kayitOlFragment_to_girisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aktifKullaniciFragment"
+        android:name="com.example.wordleclone.views.AktifKullaniciFragment"
+        android:label="fragment_aktif_kullanici"
+        tools:layout="@layout/fragment_aktif_kullanici" >
+        <action
+            android:id="@+id/action_aktifKullaniciFragment_to_tahminEkraniFragment"
+            app:destination="@id/tahminEkraniFragment" />
+        <argument
+            android:name="letterNum"
+            app:argType="string" />
+        <argument
+            android:name="odaTipi"
+            app:argType="string" />
+        <argument
+            android:name="kullaniciAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="com.example.wordleclone.views.RoomFragment"
+        android:label="fragment_room"
+        tools:layout="@layout/fragment_room" >
+        <action
+            android:id="@+id/action_roomFragment_to_aktifKullaniciFragment"
+            app:destination="@id/aktifKullaniciFragment" />
+        <argument
+            android:name="kullaniciAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/tahminEkraniFragment"
+        android:name="com.example.wordleclone.views.TahminEkraniFragment"
+        android:label="fragment_tahmin_ekrani"
+        tools:layout="@layout/fragment_tahmin_ekrani" >
+        <action
+            android:id="@+id/action_tahminEkraniFragment_to_besHarfliOyunFragment"
+            app:destination="@id/besHarfliOyunFragment" />
+        <action
+            android:id="@+id/action_tahminEkraniFragment_to_altiHarfliOyunFragment"
+            app:destination="@id/altiHarfliOyunFragment" />
+        <action
+            android:id="@+id/action_tahminEkraniFragment_to_yediHarfliOyunFragment"
+            app:destination="@id/yediHarfliOyunFragment" />
+        <action
+            android:id="@+id/action_tahminEkraniFragment_to_sekizHarfliOyunFragment"
+            app:destination="@id/sekizHarfliOyunFragment" />
+        <argument
+            android:name="letterNum"
+            app:argType="string" />
+        <argument
+            android:name="odaTipi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/besHarfliOyunFragment"
+        android:name="com.example.wordleclone.views.BesHarfliOyunFragment"
+        android:label="fragment_bes_harfli_oyun"
+        tools:layout="@layout/fragment_bes_harfli_oyun" >
+        <argument
+            android:name="letterNum"
+            app:argType="string" />
+        <argument
+            android:name="guessWord"
+            app:argType="string" />
+        <argument
+            android:name="odaTipi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/altiHarfliOyunFragment"
+        android:name="com.example.wordleclone.views.AltiHarfliOyunFragment"
+        android:label="fragment_alti_harfli_oyun"
+        tools:layout="@layout/fragment_alti_harfli_oyun" >
+        <argument
+            android:name="letterNum"
+            app:argType="string" />
+        <argument
+            android:name="guessWord"
+            app:argType="string" />
+        <argument
+            android:name="odaTipi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/yediHarfliOyunFragment"
+        android:name="com.example.wordleclone.views.YediHarfliOyunFragment"
+        android:label="fragment_yedi_harfli_oyun"
+        tools:layout="@layout/fragment_yedi_harfli_oyun" >
+        <argument
+            android:name="letterNum"
+            app:argType="string" />
+        <argument
+            android:name="guessWord"
+            app:argType="string" />
+        <argument
+            android:name="odaTipi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/sekizHarfliOyunFragment"
+        android:name="com.example.wordleclone.views.SekizHarfliOyunFragment"
+        android:label="fragment_sekiz_harfli_oyun"
+        tools:layout="@layout/fragment_sekiz_harfli_oyun" >
+        <argument
+            android:name="letterNum"
+            app:argType="string" />
+        <argument
+            android:name="guessWord"
+            app:argType="string" />
+        <argument
+            android:name="odaTipi"
+            app:argType="string" />
+    </fragment>
+</navigation>
